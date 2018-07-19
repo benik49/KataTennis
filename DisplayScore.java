@@ -3,6 +3,8 @@ public class DisplayScore {
 	
 	Score score1 ;
 	
+	//fct for display the score
+	
 	public static void displayScore (Score score1) 
 	{
 		System.out.println

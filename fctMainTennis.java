@@ -7,7 +7,7 @@ public class fctMainTennis {
 		// main fct of Tennis Kata
 		// 1st --> a Game
 		Score score1 = new Score(0,0,0,0,0,0,"","");
-		String tieBreack = "" ;
+		String tieBreack = "" ; //because 2 differentes rules for the end of a Set
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Welcome at the Kata Tennis Game, 2 players are playing, "
@@ -17,19 +17,7 @@ public class fctMainTennis {
 		System.out.println("Do you want with Tie breack ? yes or no?" );
 		tieBreack = sc.nextLine();
 		sc.nextLine() ;		
-	
-		
-		SimpleGame.game(score1, tieBreack); 
-		
-		/*If the user exit the game, we show the final score
-		 
-		  System.out.println("End of game"
-				+ "final score is "+
-				afficheScore(score1));
-				
-		*/
-	
-		
+		SimpleGame.game(score1, tieBreack); // fct of the game 
 
 	}
 

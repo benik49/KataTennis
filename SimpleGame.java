@@ -37,6 +37,7 @@ public class SimpleGame {
 			DisplayScore.displayScore(score1);
 			System.out.println("Do you want to continue the game? true (write true or yes) or false (write other things)") ;
 			str = sc.nextLine() ;
+			
 			if(str.equals("true")|| str.equals("yes"))
 			{
 				continueGame = true ;

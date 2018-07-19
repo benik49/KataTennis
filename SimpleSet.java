@@ -76,9 +76,19 @@ public class SimpleSet {
 			}
 
 		}
+		if(score1.getSetPointPlayer1()>2 )
+		{
+			System.out.println("Player A win match");
+		}
+		else if(score1.getSetPointPlayer2()>2 )
+		{
+			System.out.println("Player B win match");
+		}
+
+
 
 
 
 	}
-
+ 
 }
