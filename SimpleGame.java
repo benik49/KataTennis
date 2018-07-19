@@ -14,6 +14,7 @@ public class SimpleGame {
 		while(continueGame == true )
 		{
 			playersWinGame="";
+			// for add point to A or B 
 			while(!playersWinGame.equals("A") && !playersWinGame.equals("B") )
 			{
 				System.out.println("who win the point? A or B ?") ;
@@ -23,13 +24,15 @@ public class SimpleGame {
 
 			System.out.println(playersWinGame + " won the point ! ") ;
 
+			// if 40-40 spécial rules ADV/DEUCE
+			
 			if(score1.getSimplePointPlayer1()==40 && score1.getSimplePointPlayer2()==40)
 			{
 				deuceAdvGame(score1, playersWinGame) ;
 			}
 			else
 			{
-				// fct to resolve simple score game (0-15-30 without Deuce & adv)
+				//if not fct to resolve simple score game (0-15-30-40 without Deuce & adv)
 				normalScoreGame(score1, playersWinGame) ;
 			}
 			

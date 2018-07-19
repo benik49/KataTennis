@@ -29,7 +29,7 @@ public class SimpleSet {
 				|| !tieBreack.equals("Y") 
 				|| !tieBreack.equals("y"))
 		{
-			// rules with 7points for win 
+			// rules with 7points for win (with out tie Breack)
 
 			if(score1.getGamePointPlayer1()==7  )
 			{
@@ -52,7 +52,8 @@ public class SimpleSet {
 
 		// tie breack rules !!
 
-
+		// with 2 points difference
+		
 		else if(tieBreack.equals("Yes") || tieBreack.equals("yes") 
 				|| tieBreack.equals("Y") 
 				|| tieBreack.equals("y") )
